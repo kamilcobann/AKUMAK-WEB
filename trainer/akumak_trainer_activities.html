@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>AKÜMAK | Equipments</title>
+  </head>
+  <body  style="background-color:#cceeff; overflow-x: hidden;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="akumak_trainer_home.html" style="margin-left:200px ;">
+          <img src="images/akumak-logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          AKÜMAK
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="akumak_trainer_home.html">Home</a>
+            </li>
+
+          </ul>
+          <form class="d-flex" style="margin-right:200px ;">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+  <div class="col-sm-8 offset-2">
+    <div class="row">
+        <div class="col-sm-2 mt-4 sticky-top " style="height:100%; padding-top: 85px;">
+      
+            <div class="member-profile bg-white text-center mt-4 border rounded-2">
+            <div class="member-picture mt-2">
+              <img src="images/user.png" width="75px" height="75px" alt="" class="rounded-circle">
+            </div>
+            <div class="member-name mt-1">
+                <a href="akumak_trainer_profile.html" style="text-decoration: none; color: black;">Serdar Tekin</a>
+            </div>
+            <div class="member-type mt-1 mb-1">
+              Trainer
+            </div>
+            <button class="btn btn-outline-secondary mb-2">Sign Out</button>
+            </div>
+            <nav class="navbar">
+              <div class="list-group w-100 h-100">
+                <a href="akumak_trainer_equipments.html" class="list-group-item list-group-item-action" aria-current="true">Equipments</a>
+                <a href="akumak_trainer_activities.html" class="list-group-item list-group-item-action active">Activities</a> 
+              </div>
+              </nav>
+          </div>
+       
+          <div class="col-sm-8" style="padding-top: 85px;">
+            <div class="row">
+              <div class="col-sm-10 offset-1"> 
+                  <h3  class="text-center">My Activities</h3>
+                  <table class="table">
+                      <thead>
+                          <tr>
+                              <th scope="col">Activity Name</th>
+                              <th scope="col">Activity Date</th>
+                              <th scope="col">Cave</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>Insuyu Günü</td>
+                              <td>09.05.2023</td>
+                              <td>Insuyu Mağarası</td>
+                          </tr>
+                          <tr>
+                              <td>Insuyu Günü</td>
+                              <td>09.05.2023</td>
+                              <td>Insuyu Mağarası</td>
+                          </tr>
+                          <tr>
+                              <td>Insuyu Günü</td>
+                              <td>09.05.2023</td>
+                              <td>Insuyu Mağarası</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <div class="add-activity float-end">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#add-activity">
+                        <img src="images/icons8-plus-50.png" width="10px" height="10px" alt="">
+                      </button>
+                      
+                      
+                      <div class="modal fade" id="add-activity" tabindex="-1" aria-labelledby="add-activity-label" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="add-activity-label">Add Activity</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <form action="" method="post">
+                                    <input type="text" name="activityTitle" id="activityTitle" placeholder="Activity Title" class="mb-2 form-control">
+                                    <label for="activity-date" class="form-label mb-2">Activity Date</label>
+                                    <input type="date" name="activity-date" id="activity-date" class="form-control mb-2">
+                                    <input list="caves" name="caves" class="form-control mt-2 ms-2 float-start" placeholder="Cave" style="width:45%">
+                                    <datalist id="caves">
+                                    <option value="Insuyu">
+                                    <option value="Taşyaran">
+                                    <option value="Karain">        
+                                    </datalist>
+                                    <input list="experience" name="experience" class="form-control mt-2 ms-2 float-start" placeholder="Experience level" style="width:45%">
+                                    <datalist id="experience">
+                                    <option value="Beginner">
+                                    <option value="Experienced">
+                                    <option value="Professional">        
+                                    </datalist>                                    <div class="float-end mt-2 me-2">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                    <input type="submit" class="btn btn-primary" value="Add">
+                                </div>
+                                </form>
+    
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-sm-2" style="padding-top: 90px;">
+            <ul class="list-group">
+              <li class="list-group-item card mb-2">
+                <div class="card-body">
+                  <p style="font-size: 14px;">Jane Doe mentioned you on a post.</p>
+                </div>
+              </li>
+              <li class="list-group-item card mb-2">
+                <div class="card-body">
+                  <p style="font-size: 14px;">Berk Yeter liked your post.</p>
+                </div>
+              </li>
+              <li class="list-group-item card mb-2">
+                <div class="card-body">
+                  <p style="font-size: 14px;">Ömer Serdar Özkan liked your post.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+
+  </div>
+</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
