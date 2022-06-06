@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>AKÜMAK | Login</title>
+  </head>
+  <body  style="background-color:#e6f9ff; overflow-x: hidden;">
+    
+    <div class="container pt-5">
+        <div class="row">
+          <div class="col-sm-6 bg-white shadow" style="border-radius:15px ;">
+            <div class="akumaklogo float-start me-2">
+              <img src="images/akumak-logo.jpg" height="250px" width="250px "alt="akumak-logo">
+            </div>
+            <div class="content pt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quis cupiditate assumenda esse debitis nulla repudiandae corrupti, unde nesciunt alias!</p>
+            </div>
+          </div>
+            <div class="col-sm-4 offset-1 text-center bg-white shadow" style="border-radius:15px ;">
+            <h4 class="pt-3">AKÜMAK LOGIN</h4>
+            <br>
+            <!--Board Login Modal-->
+                <!-- Button  -->
+            <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#boardLogin" style="width: 130px !important;">
+              Board Login
+            </button>
+
+            <!-- Board Login Modal -->
+            <div class="modal fade " id="boardLogin" tabindex="-1" aria-labelledby="boardLoginLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="boardLoginLabel">Board Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="" method="post">
+                      <label for="boardUsername" class="form-label float-start">Username</label>
+                      <input type="text" name="boardUsername" id="boardUsername" class="form-control">
+                      <label for="boardPassword" class="form-label float-start">Password</label>
+                      <input type="password" name="boardPassword" id="boardPassword" class="form-control">
+                      <a href="#" class="float-start mt-3">Forgot your password ?</a>
+                      <div class="modal-footer">
+                        
+                        <input type="submit" class="btn btn-primary float-end" value="Log In">
+                        <button type="button" class="btn btn-secondary float-end" data-bs-dismiss="modal">Close</button>
+                        
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <br>
+          
+             <!--Trainer Login Modal-->
+             <!-- Button  -->
+             <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#trainerLogin" style="width: 130px !important;">
+               Trainer Login
+             </button> 
+             <!-- Trainer Login Modal -->
+             <div class="modal fade" id="trainerLogin" tabindex="-1" aria-labelledby="trainerLogin" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="trainerLogin">Trainer Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form action="" method="post">
+                          <label for="trainerUsername" class="form-label float-start">Username</label>
+                          <input type="text" name="trainerUsername" id="trainerUsername" class="form-control">
+                          <label for="trainerPassword" class="form-label float-start">Password</label>
+                          <input type="password" name="trainerPassword" id="trainerPassword" class="form-control">
+                          <a href="#" class="float-start mt-3">Forgot your password ?</a>
+
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <input type="submit" class="btn btn-primary" value="Log In">
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+             </div>
+             <br>
+                         <!--Member Login Modal-->
+                <!-- Button  -->
+
+            <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#memberLogin" style="width: 130px !important;">
+              Member Login
+            </button> 
+            <!-- Member Login Modal -->
+            <div class="modal fade" id="memberLogin" tabindex="-1" aria-labelledby="memberLogin" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="memberLogin">Member Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="" method="post">
+                      <label for="memberUsername" class="form-label float-start">Username</label>
+                      <input type="text" name="memberUsername" id="memberUsername" class="form-control">
+                      <label for="memberPassword" class="form-label float-start">Password</label>
+                      <input type="password" name="memberPassword" id="memberPassword" class="form-control">
+                      <a href="#" class="float-start mt-3">Forgot your password ?</a>
+
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <input type="submit" class="btn btn-primary" value="Log In">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+  <br>
+                                     <!--Register Modal-->
+                <!-- Button  -->
+
+                <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#register" style="width: 130px !important;">
+                  Sign Up
+                </button> 
+                <!-- Member Login Modal -->
+                <div class="modal fade" id="register" tabindex="-1" aria-labelledby="register" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="register">Sign Up</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form action="" method="post">
+                          <input type="text" name="registerFirstName" id="registerFirstName" class="form-control mt-1 mb-2" placeholder="First Name">
+                          <input type="text" name="registerLastName" id="registerLastName" class="form-control mb-2" placeholder="Last Name">
+                          <input type="email" name="registerEmail" id="registerEmail" class="form-control mb-2" placeholder="Email Address">
+                          <input type="password" name="registerPassword" id="registerPassword" class="form-control mb-2" placeholder="Password">
+                          <div class="gender float-start mb-2">
+                          Gender: 
+                          <input type="radio" name="female" id="female" value="female"> Female
+                          <input type="radio" name="male" id="male" value="male"> Male
+                          <input type="radio" name="other" id="other" value="other"> Other
+                          </div>
+                          <input class="form-control mb-2" list="memberTypes" name="type" id="type" placeholder="Member Type">
+                          <datalist id="memberTypes" >
+                            <option value="Trainer">Trainer</option>
+                            <option value="Member">Member</option>
+                          </datalist>
+                          <label for="registerBirth" class="float-start mb-2">Date of Birth</label>
+                          <input type="date" name="registerBirth" id="registerBirth" class="form-control mb-1" >
+
+                          <div class="float-end mt-2">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <input type="submit" class="btn btn-primary" value="Sign Up">
+                          </div>
+                        </form>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+            
+        </div>
+
+
+        </div>
+    </div>
+
+    <div class="container" style="position:fixed; bottom: 0; margin-left: 90px;">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">© 2021 AKÜMAK</p>
+        <a href="#">
+          <img src="images/akumak-logo.jpg" width="40px" height="40px" alt="">
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+
+        </ul>
+      </footer>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

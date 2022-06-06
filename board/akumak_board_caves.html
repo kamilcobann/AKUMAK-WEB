@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AKÜMAK | Members</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body  style="background-color:#e6f9ff; overflow-x: hidden;">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="margin-left:200px ;">
+            <img src="images/akumak-logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            AKÜMAK
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="akumak_board_home.html">Home</a>
+              </li>
+
+            </ul>
+            <form class="d-flex" style="margin-right:200px ;">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+  
+          </div>
+        </div>
+      </nav>
+
+      <div class="row">
+          <div class="col-sm-8 offset-2">
+              <div class="row">
+                <div class="col-sm-2 mt-4 sticky-top " style="height:100%; padding-top: 85px;">
+      
+                    <div class="board-profile bg-white text-center mt-4 border rounded-2">
+                    <div class="board-picture mt-2">
+                      <img src="images/user.png" width="75px" height="75px" alt="" class="rounded-circle">
+                    </div>
+                    <div class="board-name mt-1">
+                      Osman OCAK
+                    </div>
+                    <div class="board-member mt-1 mb-1">
+                      Board Member
+                    </div>
+                    <button class="btn btn-outline-secondary mb-2">Sign Out</button>
+                    </div>
+                    <nav class="navbar">
+                    <div class="list-group w-100 h-100">
+                      <a href="akumak_board_members.html" class="list-group-item list-group-item-action" aria-current="true">Members</a>
+                      <a href="akumak_board_instructors.html" class="list-group-item list-group-item-action">Instructors</a> 
+                      <a href="akumak_board_caves.html" class="list-group-item list-group-item-action active">Caves</a>
+                      <a href="akumak_board_documents.html" class="list-group-item list-group-item-action">Documents</a>
+                      <a href="akumak_board_equipments.html" class="list-group-item list-group-item-action">Equipments</a>
+                    </div>
+                    </nav>
+                  </div>
+                  <div class="col-sm-10" style="padding-top:90px;">
+                      <div class="row">
+                          <div class="col-sm-6 mt-5">
+                            <h3 class="text-center">Cave List</h3>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Location</th>
+                                        <th scope="col">Experience</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>İnsuyu</td>
+                                        <td>Catağıl/Burdur</td>
+                                        <td>Beginner</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Taşyaran</td>
+                                        <td>Ulubey/Uşak</td>
+                                        <td>Beginner</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kleopatra</td>
+                                        <td>Selçuk/İzmir</td>
+                                        <td>Extreme</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kleopatra</td>
+                                        <td>Selçuk/İzmir</td>
+                                        <td>Extreme</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kleopatra</td>
+                                        <td>Selçuk/İzmir</td>
+                                        <td>Extreme</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kleopatra</td>
+                                        <td>Selçuk/İzmir</td>
+                                        <td>Extreme</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kleopatra</td>
+                                        <td>Selçuk/İzmir</td>
+                                        <td>Extreme</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                          </div>
+                          <div class="col-sm-3 mt-5">
+                            <h3 class="text-center">Add Cave</h3>
+                            <form action="" method="post">
+                                <label for="newName" class="form-label">Cave Name</label>
+                                <input type="text" class="form-control" name="newName" id="newName" placeholder="Cave Name">
+                                <label for="newLocation" class="form-label">Location</label>
+                                <input type="text"  name="newLocation" id="newLocation" class="form-control" placeholder="Location">
+                                <label class="form-label" for="newExperience">Experience Level</label>
+                                <select name="town" class="form-control" name="newExperience" id="newExperience">
+                                    <option value="beginner">Beginner</option>
+                                    <option value="experienced">Experienced</option>
+                                    <option value="professional">Professional</option>
+                                </select>
+                                <input type="submit" value="Add" class="btn btn-success mt-2 float-end">
+                            </form>
+                          </div>
+                          <div class="col-sm-3 mt-5">
+                              <h3 class="text-center">Remove Cave</h3>
+                            <form action="" method="post">
+                                <label for="deleteName" class="form-label">Cave Name</label>
+                                <input type="text" class="form-control" name="deleteName" id="deleteName" placeholder="Cave Name">
+                                <label for="reason" class="form-label">Reason</label>
+                                <input type="text" name="reason"  class="form-control" id="reason">
+                                <input type="submit" value="Remove" class="btn btn-danger mt-2 float-end">
+                            </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            
+            
+            
+              
+            
+            
+          </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
